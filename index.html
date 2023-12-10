@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
+    <title>Calculator</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Animated circle containing mathematical symbols -->
+    <div class="circle">
+      <!-- Multiplication symbol -->
+      <span class="one">×</span>
+      <!-- Addition symbol -->
+      <span class="two">+</span>
+      <!-- Subtraction symbol -->
+      <span class="three">−</span>
+      <!-- Division symbol -->
+      <span class="four">÷</span>
+      <!-- Percentage symbol -->
+      <span class="five">%</span>
+      <!-- Integral symbol -->
+      <span class="six">∫</span>
+      <!-- Pi symbol -->
+      <span class="seven">π</span>
+    </div>
+
+    <!-- Calculator container with input and buttons -->
+    <div class="container">
+      <!-- Calculator form -->
+      <form class="calculator" name="calc">
+        <!-- Display/input area -->
+        <input type="text" placeholder="0" class="value screen" name="txt" />
+        <!-- Clear button -->
+        <span class="num clear" onclick="handleButtonClick('c')">c</span>
+        <!-- Decimal point button -->
+        <span class="num" onclick="handleButtonClick('.')">.</span>
+        <!-- Multiplication button -->
+        <span class="num" onclick="handleButtonClick('*')">*</span>
+        <!-- Number buttons -->
+        <span class="num" onclick="handleButtonClick('7')">7</span>
+        <span class="num" onclick="handleButtonClick('8')">8</span>
+        <span class="num" onclick="handleButtonClick('9')">9</span>
+        <span class="num" onclick="handleButtonClick('-')">-</span>
+        <span class="num" onclick="handleButtonClick('4')">4</span>
+        <span class="num" onclick="handleButtonClick('5')">5</span>
+        <span class="num" onclick="handleButtonClick('6')">6</span>
+        <span class="num" onclick="handleButtonClick('+')">+</span>
+        <span class="num" onclick="handleButtonClick('1')">1</span>
+        <span class="num" onclick="handleButtonClick('2')">2</span>
+        <span class="num" onclick="handleButtonClick('3')">3</span>
+        <span class="num" onclick="handleButtonClick('/')">/</span>
+        <span class="num" onclick="handleButtonClick('00')">00</span>
+        <span class="num" onclick="handleButtonClick('0')">0</span>
+        <!-- Equal button -->
+        <span class="num equal" onclick="handleEqual()">=</span>
+      </form>
+    </div>
+
+    <!-- JavaScript file for calculator functionality -->
+    <script src="index.js"></script>
+  </body>
+</html>
